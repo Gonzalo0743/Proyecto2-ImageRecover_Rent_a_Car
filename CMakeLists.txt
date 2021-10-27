@@ -14,6 +14,6 @@ include_directories(
         cmake-build-debug
 )
 
-add_executable(untitled Sources/main.cpp Headers/MainWindow.h Sources/MainWindow.cpp)
+add_executable(untitled Interface/Sources/main.cpp Interface/Headers/MainWindow.h Interface/Sources/MainWindow.cpp)
 
 target_link_libraries(untitled PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
