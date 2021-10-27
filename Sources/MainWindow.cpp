@@ -1,0 +1,40 @@
+#include "Headers/MainWindow.h"
+
+MainWindow::MainWindow(QWidget *parent):QWidget(parent){
+
+    //Setting the Sizes and the Title
+    setWindowTitle("Rent a car & Image Recovery");
+    setMinimumSize(800,600);
+    setMaximumSize(800,600);
+    setStyleSheet("background-color:white");
+
+    //Showing the buttons
+    RentButton = new QPushButton("SELECT",this);
+    RentButton->setCheckable(true);
+    RentButton->setGeometry(200,350,140,30);
+    connect(RentButton, SIGNAL(clicked(bool)),this,SLOT(on_RentButton_clicked(bool)));
+
+    IRButton = new QPushButton("SELECTS", this);
+    IRButton->setCheckable(true);
+    IRButton->setGeometry(500,350,140,30);
+    connect(RentButton, SIGNAL(clicked(bool)),this,SLOT(on_IRButton_clicked(bool)));
+
+}
+
+void MainWindow::on_RentButton_clicked(bool checked) {
+    if(checked){
+
+        this->hide();
+    }
+
+}
+
+void MainWindow::on_IRButton_clicked(bool checked) {
+    if(checked){
+
+        this->hide();
+    }
+
+}
+
+
