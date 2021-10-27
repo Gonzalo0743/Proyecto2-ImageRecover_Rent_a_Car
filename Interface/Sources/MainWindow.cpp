@@ -26,12 +26,17 @@ MainWindow::MainWindow(QWidget *parent):QWidget(parent){
     IRButton->setGeometry(500,350,140,30);
     connect(RentButton, SIGNAL(clicked(bool)),this,SLOT(on_IRButton_clicked(bool)));
 
+    Rent = new RentWindow();
+    IRecovery = new ImageWindow();
 }
 
 void MainWindow::on_RentButton_clicked(bool checked) {
     if(checked){
 
         this->hide();
+
+        Rent->show();
+        //Rent->start();
     }
 
 }
@@ -40,6 +45,8 @@ void MainWindow::on_IRButton_clicked(bool checked) {
     if(checked){
 
         this->hide();
+
+        IRecovery->show();
     }
 
 }

@@ -105,11 +105,39 @@ CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gonzalo/CLionProjects/untitled/Interface/Sources/MainWindow.cpp -o CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.s
 
+CMakeFiles/untitled.dir/Interface/Sources/RentWindow.cpp.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/Interface/Sources/RentWindow.cpp.o: ../Interface/Sources/RentWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gonzalo/CLionProjects/untitled/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled.dir/Interface/Sources/RentWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/Interface/Sources/RentWindow.cpp.o -c /home/gonzalo/CLionProjects/untitled/Interface/Sources/RentWindow.cpp
+
+CMakeFiles/untitled.dir/Interface/Sources/RentWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Interface/Sources/RentWindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gonzalo/CLionProjects/untitled/Interface/Sources/RentWindow.cpp > CMakeFiles/untitled.dir/Interface/Sources/RentWindow.cpp.i
+
+CMakeFiles/untitled.dir/Interface/Sources/RentWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Interface/Sources/RentWindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gonzalo/CLionProjects/untitled/Interface/Sources/RentWindow.cpp -o CMakeFiles/untitled.dir/Interface/Sources/RentWindow.cpp.s
+
+CMakeFiles/untitled.dir/Interface/Sources/ImageWindow.cpp.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/Interface/Sources/ImageWindow.cpp.o: ../Interface/Sources/ImageWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gonzalo/CLionProjects/untitled/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/untitled.dir/Interface/Sources/ImageWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/Interface/Sources/ImageWindow.cpp.o -c /home/gonzalo/CLionProjects/untitled/Interface/Sources/ImageWindow.cpp
+
+CMakeFiles/untitled.dir/Interface/Sources/ImageWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Interface/Sources/ImageWindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gonzalo/CLionProjects/untitled/Interface/Sources/ImageWindow.cpp > CMakeFiles/untitled.dir/Interface/Sources/ImageWindow.cpp.i
+
+CMakeFiles/untitled.dir/Interface/Sources/ImageWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Interface/Sources/ImageWindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gonzalo/CLionProjects/untitled/Interface/Sources/ImageWindow.cpp -o CMakeFiles/untitled.dir/Interface/Sources/ImageWindow.cpp.s
+
 # Object files for target untitled
 untitled_OBJECTS = \
 "CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/untitled.dir/Interface/Sources/main.cpp.o" \
-"CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.o"
+"CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.o" \
+"CMakeFiles/untitled.dir/Interface/Sources/RentWindow.cpp.o" \
+"CMakeFiles/untitled.dir/Interface/Sources/ImageWindow.cpp.o"
 
 # External object files for target untitled
 untitled_EXTERNAL_OBJECTS =
@@ -117,6 +145,8 @@ untitled_EXTERNAL_OBJECTS =
 untitled: CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o
 untitled: CMakeFiles/untitled.dir/Interface/Sources/main.cpp.o
 untitled: CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.o
+untitled: CMakeFiles/untitled.dir/Interface/Sources/RentWindow.cpp.o
+untitled: CMakeFiles/untitled.dir/Interface/Sources/ImageWindow.cpp.o
 untitled: CMakeFiles/untitled.dir/build.make
 untitled: /home/gonzalo/Qt/6.1.3/gcc_64/lib/libQt6Widgets.so.6.1.3
 untitled: /home/gonzalo/Qt/6.1.3/gcc_64/lib/libQt6Gui.so.6.1.3
@@ -124,7 +154,7 @@ untitled: /home/gonzalo/Qt/6.1.3/gcc_64/lib/libQt6Core.so.6.1.3
 untitled: /usr/lib/x86_64-linux-gnu/libGLX.so
 untitled: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 untitled: CMakeFiles/untitled.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gonzalo/CLionProjects/untitled/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable untitled"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gonzalo/CLionProjects/untitled/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable untitled"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

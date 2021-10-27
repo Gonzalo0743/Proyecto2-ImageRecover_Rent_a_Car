@@ -177,9 +177,21 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/gonzalo/CLionProjects/untitled/Interface/Headers/ImageWindow.h",
+			"MU",
+			"CL3BNZK4NU/moc_ImageWindow.cpp",
+			null
+		],
+		[
 			"/home/gonzalo/CLionProjects/untitled/Interface/Headers/MainWindow.h",
 			"MU",
 			"CL3BNZK4NU/moc_MainWindow.cpp",
+			null
+		],
+		[
+			"/home/gonzalo/CLionProjects/untitled/Interface/Headers/RentWindow.h",
+			"MU",
+			"CL3BNZK4NU/moc_RentWindow.cpp",
 			null
 		]
 	],
@@ -236,7 +248,17 @@
 	"SOURCES" : 
 	[
 		[
+			"/home/gonzalo/CLionProjects/untitled/Interface/Sources/ImageWindow.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/gonzalo/CLionProjects/untitled/Interface/Sources/MainWindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/gonzalo/CLionProjects/untitled/Interface/Sources/RentWindow.cpp",
 			"MU",
 			null
 		],

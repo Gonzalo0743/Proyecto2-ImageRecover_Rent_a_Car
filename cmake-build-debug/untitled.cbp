@@ -114,10 +114,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/gonzalo/CLionProjects/untitled/Interface/Headers/ImageWindow.h">
+			<Option target="untitled"/>
+		</Unit>
 		<Unit filename="/home/gonzalo/CLionProjects/untitled/Interface/Headers/MainWindow.h">
 			<Option target="untitled"/>
 		</Unit>
+		<Unit filename="/home/gonzalo/CLionProjects/untitled/Interface/Headers/RentWindow.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/home/gonzalo/CLionProjects/untitled/Interface/Sources/ImageWindow.cpp">
+			<Option target="untitled"/>
+		</Unit>
 		<Unit filename="/home/gonzalo/CLionProjects/untitled/Interface/Sources/MainWindow.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/home/gonzalo/CLionProjects/untitled/Interface/Sources/RentWindow.cpp">
 			<Option target="untitled"/>
 		</Unit>
 		<Unit filename="/home/gonzalo/CLionProjects/untitled/Interface/Sources/main.cpp">

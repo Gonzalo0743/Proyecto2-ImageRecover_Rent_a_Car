@@ -16,6 +16,8 @@
 #include <QLineEdit>
 #include <QLabel>
 #include <QPushButton>
+#include "RentWindow.h"
+#include "ImageWindow.h"
 
 class MainWindow : public QWidget{
 Q_OBJECT
@@ -29,11 +31,14 @@ private slots:
     void on_IRButton_clicked(bool checked);
 
 private:
+
     QImage* titleImage;
     QLineEdit* userInput;
     QPushButton* RentButton;
     QPushButton* IRButton;
     QLabel* titleLabel;
+    RentWindow* Rent;
+    ImageWindow* IRecovery;
 
 };
 
