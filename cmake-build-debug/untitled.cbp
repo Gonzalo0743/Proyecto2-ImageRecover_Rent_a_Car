@@ -114,13 +114,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/gonzalo/CLionProjects/untitled/Headers/MainWindow.h">
+		<Unit filename="/home/gonzalo/CLionProjects/untitled/Interface/Headers/MainWindow.h">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/home/gonzalo/CLionProjects/untitled/Sources/MainWindow.cpp">
+		<Unit filename="/home/gonzalo/CLionProjects/untitled/Interface/Sources/MainWindow.cpp">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/home/gonzalo/CLionProjects/untitled/Sources/main.cpp">
+		<Unit filename="/home/gonzalo/CLionProjects/untitled/Interface/Sources/main.cpp">
 			<Option target="untitled"/>
 		</Unit>
 		<Unit filename="/home/gonzalo/CLionProjects/untitled/cmake-build-debug/untitled_autogen/mocs_compilation.cpp">

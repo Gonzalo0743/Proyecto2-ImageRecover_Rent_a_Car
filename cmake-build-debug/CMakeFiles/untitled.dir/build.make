@@ -79,44 +79,44 @@ CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gonzalo/CLionProjects/untitled/cmake-build-debug/untitled_autogen/mocs_compilation.cpp -o CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.s
 
-CMakeFiles/untitled.dir/Sources/main.cpp.o: CMakeFiles/untitled.dir/flags.make
-CMakeFiles/untitled.dir/Sources/main.cpp.o: ../Sources/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gonzalo/CLionProjects/untitled/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled.dir/Sources/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/Sources/main.cpp.o -c /home/gonzalo/CLionProjects/untitled/Sources/main.cpp
+CMakeFiles/untitled.dir/Interface/Sources/main.cpp.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/Interface/Sources/main.cpp.o: ../Interface/Sources/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gonzalo/CLionProjects/untitled/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled.dir/Interface/Sources/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/Interface/Sources/main.cpp.o -c /home/gonzalo/CLionProjects/untitled/Interface/Sources/main.cpp
 
-CMakeFiles/untitled.dir/Sources/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Sources/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gonzalo/CLionProjects/untitled/Sources/main.cpp > CMakeFiles/untitled.dir/Sources/main.cpp.i
+CMakeFiles/untitled.dir/Interface/Sources/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Interface/Sources/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gonzalo/CLionProjects/untitled/Interface/Sources/main.cpp > CMakeFiles/untitled.dir/Interface/Sources/main.cpp.i
 
-CMakeFiles/untitled.dir/Sources/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Sources/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gonzalo/CLionProjects/untitled/Sources/main.cpp -o CMakeFiles/untitled.dir/Sources/main.cpp.s
+CMakeFiles/untitled.dir/Interface/Sources/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Interface/Sources/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gonzalo/CLionProjects/untitled/Interface/Sources/main.cpp -o CMakeFiles/untitled.dir/Interface/Sources/main.cpp.s
 
-CMakeFiles/untitled.dir/Sources/MainWindow.cpp.o: CMakeFiles/untitled.dir/flags.make
-CMakeFiles/untitled.dir/Sources/MainWindow.cpp.o: ../Sources/MainWindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gonzalo/CLionProjects/untitled/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/Sources/MainWindow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/Sources/MainWindow.cpp.o -c /home/gonzalo/CLionProjects/untitled/Sources/MainWindow.cpp
+CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.o: ../Interface/Sources/MainWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gonzalo/CLionProjects/untitled/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.o -c /home/gonzalo/CLionProjects/untitled/Interface/Sources/MainWindow.cpp
 
-CMakeFiles/untitled.dir/Sources/MainWindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Sources/MainWindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gonzalo/CLionProjects/untitled/Sources/MainWindow.cpp > CMakeFiles/untitled.dir/Sources/MainWindow.cpp.i
+CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gonzalo/CLionProjects/untitled/Interface/Sources/MainWindow.cpp > CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.i
 
-CMakeFiles/untitled.dir/Sources/MainWindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Sources/MainWindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gonzalo/CLionProjects/untitled/Sources/MainWindow.cpp -o CMakeFiles/untitled.dir/Sources/MainWindow.cpp.s
+CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gonzalo/CLionProjects/untitled/Interface/Sources/MainWindow.cpp -o CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.s
 
 # Object files for target untitled
 untitled_OBJECTS = \
 "CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o" \
-"CMakeFiles/untitled.dir/Sources/main.cpp.o" \
-"CMakeFiles/untitled.dir/Sources/MainWindow.cpp.o"
+"CMakeFiles/untitled.dir/Interface/Sources/main.cpp.o" \
+"CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.o"
 
 # External object files for target untitled
 untitled_EXTERNAL_OBJECTS =
 
 untitled: CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o
-untitled: CMakeFiles/untitled.dir/Sources/main.cpp.o
-untitled: CMakeFiles/untitled.dir/Sources/MainWindow.cpp.o
+untitled: CMakeFiles/untitled.dir/Interface/Sources/main.cpp.o
+untitled: CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.o
 untitled: CMakeFiles/untitled.dir/build.make
 untitled: /home/gonzalo/Qt/6.1.3/gcc_64/lib/libQt6Widgets.so.6.1.3
 untitled: /home/gonzalo/Qt/6.1.3/gcc_64/lib/libQt6Gui.so.6.1.3

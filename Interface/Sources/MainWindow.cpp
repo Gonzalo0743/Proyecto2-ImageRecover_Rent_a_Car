@@ -8,6 +8,13 @@ MainWindow::MainWindow(QWidget *parent):QWidget(parent){
     setMaximumSize(800,600);
     setStyleSheet("background-color:white");
 
+    //Show title image
+    titleImage=new QImage();
+    titleImage->load("GUI/ProgramTitle.png");
+    titleLabel = new QLabel(this);
+    titleLabel->setPixmap(QPixmap::fromImage(*titleImage));
+    titleLabel->setGeometry(10,0,234,163);
+
     //Showing the buttons
     RentButton = new QPushButton("SELECT",this);
     RentButton->setCheckable(true);

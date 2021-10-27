@@ -142,53 +142,53 @@ untitled_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled_autogen.dir/build.make CMakeFiles/untitled_autogen.dir/build
 .PHONY : untitled_autogen/fast
 
-Sources/MainWindow.o: Sources/MainWindow.cpp.o
-.PHONY : Sources/MainWindow.o
+Interface/Sources/MainWindow.o: Interface/Sources/MainWindow.cpp.o
+.PHONY : Interface/Sources/MainWindow.o
 
 # target to build an object file
-Sources/MainWindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Sources/MainWindow.cpp.o
-.PHONY : Sources/MainWindow.cpp.o
+Interface/Sources/MainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.o
+.PHONY : Interface/Sources/MainWindow.cpp.o
 
-Sources/MainWindow.i: Sources/MainWindow.cpp.i
-.PHONY : Sources/MainWindow.i
+Interface/Sources/MainWindow.i: Interface/Sources/MainWindow.cpp.i
+.PHONY : Interface/Sources/MainWindow.i
 
 # target to preprocess a source file
-Sources/MainWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Sources/MainWindow.cpp.i
-.PHONY : Sources/MainWindow.cpp.i
+Interface/Sources/MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.i
+.PHONY : Interface/Sources/MainWindow.cpp.i
 
-Sources/MainWindow.s: Sources/MainWindow.cpp.s
-.PHONY : Sources/MainWindow.s
+Interface/Sources/MainWindow.s: Interface/Sources/MainWindow.cpp.s
+.PHONY : Interface/Sources/MainWindow.s
 
 # target to generate assembly for a file
-Sources/MainWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Sources/MainWindow.cpp.s
-.PHONY : Sources/MainWindow.cpp.s
+Interface/Sources/MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Interface/Sources/MainWindow.cpp.s
+.PHONY : Interface/Sources/MainWindow.cpp.s
 
-Sources/main.o: Sources/main.cpp.o
-.PHONY : Sources/main.o
+Interface/Sources/main.o: Interface/Sources/main.cpp.o
+.PHONY : Interface/Sources/main.o
 
 # target to build an object file
-Sources/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Sources/main.cpp.o
-.PHONY : Sources/main.cpp.o
+Interface/Sources/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Interface/Sources/main.cpp.o
+.PHONY : Interface/Sources/main.cpp.o
 
-Sources/main.i: Sources/main.cpp.i
-.PHONY : Sources/main.i
+Interface/Sources/main.i: Interface/Sources/main.cpp.i
+.PHONY : Interface/Sources/main.i
 
 # target to preprocess a source file
-Sources/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Sources/main.cpp.i
-.PHONY : Sources/main.cpp.i
+Interface/Sources/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Interface/Sources/main.cpp.i
+.PHONY : Interface/Sources/main.cpp.i
 
-Sources/main.s: Sources/main.cpp.s
-.PHONY : Sources/main.s
+Interface/Sources/main.s: Interface/Sources/main.cpp.s
+.PHONY : Interface/Sources/main.s
 
 # target to generate assembly for a file
-Sources/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Sources/main.cpp.s
-.PHONY : Sources/main.cpp.s
+Interface/Sources/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Interface/Sources/main.cpp.s
+.PHONY : Interface/Sources/main.cpp.s
 
 untitled_autogen/mocs_compilation.o: untitled_autogen/mocs_compilation.cpp.o
 .PHONY : untitled_autogen/mocs_compilation.o
@@ -224,12 +224,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... untitled_autogen"
 	@echo "... untitled"
-	@echo "... Sources/MainWindow.o"
-	@echo "... Sources/MainWindow.i"
-	@echo "... Sources/MainWindow.s"
-	@echo "... Sources/main.o"
-	@echo "... Sources/main.i"
-	@echo "... Sources/main.s"
+	@echo "... Interface/Sources/MainWindow.o"
+	@echo "... Interface/Sources/MainWindow.i"
+	@echo "... Interface/Sources/MainWindow.s"
+	@echo "... Interface/Sources/main.o"
+	@echo "... Interface/Sources/main.i"
+	@echo "... Interface/Sources/main.s"
 	@echo "... untitled_autogen/mocs_compilation.o"
 	@echo "... untitled_autogen/mocs_compilation.i"
 	@echo "... untitled_autogen/mocs_compilation.s"
