@@ -24,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent):QWidget(parent){
     IRButton = new QPushButton("SELECTS", this);
     IRButton->setCheckable(true);
     IRButton->setGeometry(500,350,140,30);
-    connect(RentButton, SIGNAL(clicked(bool)),this,SLOT(on_IRButton_clicked(bool)));
+    connect(IRButton, SIGNAL(clicked(bool)),this,SLOT(on_IRButton_clicked(bool)));
 
     Rent = new RentWindow();
     IRecovery = new ImageWindow();
