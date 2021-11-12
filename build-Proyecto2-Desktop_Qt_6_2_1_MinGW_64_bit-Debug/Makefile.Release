@@ -16,10 +16,10 @@ CXX           = g++
 DEFINES       = -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -DQT_QML_DEBUG -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NEEDS_QMAIN
 CFLAGS        = -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra $(DEFINES)
 CXXFLAGS      = -fno-keep-inline-dllexport -O2 -std=gnu++1z -Wall -Wextra -Wextra -fexceptions -mthreads $(DEFINES)
-INCPATH       = -I../Proyecto2 -I. -IC:/Qt/6.2.1/mingw81_64/include -IC:/Qt/6.2.1/mingw81_64/include/QtPrintSupport -IC:/Qt/6.2.1/mingw81_64/include/QtWidgets -IC:/Qt/6.2.1/mingw81_64/include/QtGui -IC:/Qt/6.2.1/mingw81_64/include/QtCore -Irelease -I. -I/include -IC:/Qt/6.2.1/mingw81_64/mkspecs/win32-g++ 
+INCPATH       = -I../Proyecto2 -I. -IC:/opencv/build/include -IC:/Qt/6.2.1/mingw81_64/include -IC:/Qt/6.2.1/mingw81_64/include/QtPrintSupport -IC:/Qt/6.2.1/mingw81_64/include/QtWidgets -IC:/Qt/6.2.1/mingw81_64/include/QtGui -IC:/Qt/6.2.1/mingw81_64/include/QtCore -Irelease -I. -I/include -IC:/Qt/6.2.1/mingw81_64/mkspecs/win32-g++ 
 LINKER      =        g++
 LFLAGS        =        -Wl,-s -Wl,-subsystem,windows -mthreads
-LIBS        =        C:\Qt\6.2.1\mingw81_64\lib\libQt6PrintSupport.a C:\Qt\6.2.1\mingw81_64\lib\libQt6Widgets.a C:\Qt\6.2.1\mingw81_64\lib\libQt6Gui.a C:\Qt\6.2.1\mingw81_64\lib\libQt6Core.a -lmingw32 C:\Qt\6.2.1\mingw81_64\lib\libQt6EntryPoint.a -lshell32  
+LIBS        =        -LC:\opencv\build\x64\vc15\lib -lopencv_world454 C:\Qt\6.2.1\mingw81_64\lib\libQt6PrintSupport.a C:\Qt\6.2.1\mingw81_64\lib\libQt6Widgets.a C:\Qt\6.2.1\mingw81_64\lib\libQt6Gui.a C:\Qt\6.2.1\mingw81_64\lib\libQt6Core.a -lmingw32 C:\Qt\6.2.1\mingw81_64\lib\libQt6EntryPoint.a -lshell32  
 QMAKE         = C:\Qt\6.2.1\mingw81_64\bin\qmake.exe
 DEL_FILE      = del
 CHK_DIR_EXISTS= if not exist
@@ -275,7 +275,7 @@ release/moc_irwindow.cpp: ../Proyecto2/irwindow.h \
 		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qdialog.h \
 		release/moc_predefs.h \
 		C:/Qt/6.2.1/mingw81_64/bin/moc.exe
-	C:\Qt\6.2.1\mingw81_64\bin\moc.exe $(DEFINES) --include "C:/Users/Chalo/Documents/Qt Projects/build-Proyecto2-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.2.1/mingw81_64/mkspecs/win32-g++ -I"C:/Users/Chalo/Documents/Qt Projects/Proyecto2" -IC:/Qt/6.2.1/mingw81_64/include -IC:/Qt/6.2.1/mingw81_64/include/QtPrintSupport -IC:/Qt/6.2.1/mingw81_64/include/QtWidgets -IC:/Qt/6.2.1/mingw81_64/include/QtGui -IC:/Qt/6.2.1/mingw81_64/include/QtCore -I. -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\Proyecto2\irwindow.h -o release\moc_irwindow.cpp
+	C:\Qt\6.2.1\mingw81_64\bin\moc.exe $(DEFINES) --include "C:/Users/Chalo/Documents/Qt Projects/build-Proyecto2-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.2.1/mingw81_64/mkspecs/win32-g++ -I"C:/Users/Chalo/Documents/Qt Projects/Proyecto2" -IC:/opencv/build/include -IC:/Qt/6.2.1/mingw81_64/include -IC:/Qt/6.2.1/mingw81_64/include/QtPrintSupport -IC:/Qt/6.2.1/mingw81_64/include/QtWidgets -IC:/Qt/6.2.1/mingw81_64/include/QtGui -IC:/Qt/6.2.1/mingw81_64/include/QtCore -I. -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\Proyecto2\irwindow.h -o release\moc_irwindow.cpp
 
 release/moc_mainwindow.cpp: ../Proyecto2/mainwindow.h \
 		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/QMainWindow \
@@ -427,7 +427,7 @@ release/moc_mainwindow.cpp: ../Proyecto2/mainwindow.h \
 		../Proyecto2/rcwindow.h \
 		release/moc_predefs.h \
 		C:/Qt/6.2.1/mingw81_64/bin/moc.exe
-	C:\Qt\6.2.1\mingw81_64\bin\moc.exe $(DEFINES) --include "C:/Users/Chalo/Documents/Qt Projects/build-Proyecto2-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.2.1/mingw81_64/mkspecs/win32-g++ -I"C:/Users/Chalo/Documents/Qt Projects/Proyecto2" -IC:/Qt/6.2.1/mingw81_64/include -IC:/Qt/6.2.1/mingw81_64/include/QtPrintSupport -IC:/Qt/6.2.1/mingw81_64/include/QtWidgets -IC:/Qt/6.2.1/mingw81_64/include/QtGui -IC:/Qt/6.2.1/mingw81_64/include/QtCore -I. -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\Proyecto2\mainwindow.h -o release\moc_mainwindow.cpp
+	C:\Qt\6.2.1\mingw81_64\bin\moc.exe $(DEFINES) --include "C:/Users/Chalo/Documents/Qt Projects/build-Proyecto2-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.2.1/mingw81_64/mkspecs/win32-g++ -I"C:/Users/Chalo/Documents/Qt Projects/Proyecto2" -IC:/opencv/build/include -IC:/Qt/6.2.1/mingw81_64/include -IC:/Qt/6.2.1/mingw81_64/include/QtPrintSupport -IC:/Qt/6.2.1/mingw81_64/include/QtWidgets -IC:/Qt/6.2.1/mingw81_64/include/QtGui -IC:/Qt/6.2.1/mingw81_64/include/QtCore -I. -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\Proyecto2\mainwindow.h -o release\moc_mainwindow.cpp
 
 release/moc_rcwindow.cpp: ../Proyecto2/rcwindow.h \
 		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/QMainWindow \
@@ -563,7 +563,7 @@ release/moc_rcwindow.cpp: ../Proyecto2/rcwindow.h \
 		C:/Qt/6.2.1/mingw81_64/include/QtGui/qicon.h \
 		release/moc_predefs.h \
 		C:/Qt/6.2.1/mingw81_64/bin/moc.exe
-	C:\Qt\6.2.1\mingw81_64\bin\moc.exe $(DEFINES) --include "C:/Users/Chalo/Documents/Qt Projects/build-Proyecto2-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.2.1/mingw81_64/mkspecs/win32-g++ -I"C:/Users/Chalo/Documents/Qt Projects/Proyecto2" -IC:/Qt/6.2.1/mingw81_64/include -IC:/Qt/6.2.1/mingw81_64/include/QtPrintSupport -IC:/Qt/6.2.1/mingw81_64/include/QtWidgets -IC:/Qt/6.2.1/mingw81_64/include/QtGui -IC:/Qt/6.2.1/mingw81_64/include/QtCore -I. -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\Proyecto2\rcwindow.h -o release\moc_rcwindow.cpp
+	C:\Qt\6.2.1\mingw81_64\bin\moc.exe $(DEFINES) --include "C:/Users/Chalo/Documents/Qt Projects/build-Proyecto2-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.2.1/mingw81_64/mkspecs/win32-g++ -I"C:/Users/Chalo/Documents/Qt Projects/Proyecto2" -IC:/opencv/build/include -IC:/Qt/6.2.1/mingw81_64/include -IC:/Qt/6.2.1/mingw81_64/include/QtPrintSupport -IC:/Qt/6.2.1/mingw81_64/include/QtWidgets -IC:/Qt/6.2.1/mingw81_64/include/QtGui -IC:/Qt/6.2.1/mingw81_64/include/QtCore -I. -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\Proyecto2\rcwindow.h -o release\moc_rcwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -969,6 +969,43 @@ release/main.o: ../Proyecto2/main.cpp ../Proyecto2/mainwindow.h \
 		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qmessagebox.h \
 		../Proyecto2/irwindow.h \
 		../Proyecto2/rcwindow.h \
+		C:/opencv/build/include/opencv2/core/core.hpp \
+		C:/opencv/build/include/opencv2/core.hpp \
+		C:/opencv/build/include/opencv2/core/cvdef.h \
+		C:/opencv/build/include/opencv2/core/version.hpp \
+		C:/opencv/build/include/opencv2/core/hal/interface.h \
+		C:/opencv/build/include/opencv2/core/cv_cpu_dispatch.h \
+		C:/opencv/build/include/opencv2/core/cv_cpu_helper.h \
+		C:/opencv/build/include/opencv2/core/hal/msa_macros.h \
+		C:/opencv/build/include/opencv2/core/fast_math.hpp \
+		C:/opencv/build/include/opencv2/core/base.hpp \
+		C:/opencv/build/include/opencv2/opencv_modules.hpp \
+		C:/opencv/build/include/opencv2/core/cvstd.hpp \
+		C:/opencv/build/include/opencv2/core/cvstd_wrapper.hpp \
+		C:/opencv/build/include/opencv2/core/neon_utils.hpp \
+		C:/opencv/build/include/opencv2/core/vsx_utils.hpp \
+		C:/opencv/build/include/opencv2/core/check.hpp \
+		C:/opencv/build/include/opencv2/core/traits.hpp \
+		C:/opencv/build/include/opencv2/core/matx.hpp \
+		C:/opencv/build/include/opencv2/core/saturate.hpp \
+		C:/opencv/build/include/opencv2/core/types.hpp \
+		C:/opencv/build/include/opencv2/core/mat.hpp \
+		C:/opencv/build/include/opencv2/core/bufferpool.hpp \
+		C:/opencv/build/include/opencv2/core/mat.inl.hpp \
+		C:/opencv/build/include/opencv2/core/persistence.hpp \
+		C:/opencv/build/include/opencv2/core/operations.hpp \
+		C:/opencv/build/include/opencv2/core/cvstd.inl.hpp \
+		C:/opencv/build/include/opencv2/core/utility.hpp \
+		C:/opencv/build/include/opencv2/core/utils/instrumentation.hpp \
+		C:/opencv/build/include/opencv2/core/utils/tls.hpp \
+		C:/opencv/build/include/opencv2/core/optim.hpp \
+		C:/opencv/build/include/opencv2/core/ovx.hpp \
+		C:/opencv/build/include/opencv2/highgui/highgui.hpp \
+		C:/opencv/build/include/opencv2/highgui.hpp \
+		C:/opencv/build/include/opencv2/imgcodecs.hpp \
+		C:/opencv/build/include/opencv2/videoio.hpp \
+		C:/opencv/build/include/opencv2/imgproc.hpp \
+		C:/opencv/build/include/opencv2/imgproc/segmentation.hpp \
 		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/QApplication \
 		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.2.1/mingw81_64/include/QtCore/qcoreapplication.h \
@@ -1334,13 +1371,40 @@ release/rcwindow.o: ../Proyecto2/rcwindow.cpp ../Proyecto2/rcwindow.h \
 		C:/Qt/6.2.1/mingw81_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.2.1/mingw81_64/include/QtCore/qlocale.h \
 		C:/Qt/6.2.1/mingw81_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtGui/qpen.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtGui/qtextoption.h \
 		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/QMenuBar \
 		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qmenubar.h \
 		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qmenu.h \
 		C:/Qt/6.2.1/mingw81_64/include/QtGui/qaction.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/QStatusBar \
 		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qstatusbar.h \
-		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/QWidget
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/QWidget \
+		../Proyecto2/graph.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtCore/QString \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.2.1/mingw81_64/include/QtWidgets/qdialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\rcwindow.o ..\Proyecto2\rcwindow.cpp
 
 release/qrc_Resources.o: release/qrc_Resources.cpp 

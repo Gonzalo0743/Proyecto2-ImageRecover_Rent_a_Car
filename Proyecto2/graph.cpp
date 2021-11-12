@@ -1,4 +1,3 @@
-
 #include "graph.h"
 #include "stdlib.h"
 
@@ -13,8 +12,8 @@ void Graph::Start()
 }
 
 /**
- * @brief Este metodo se encarga de revisar si el grafo se encuentra vacio
- * @return A boolean
+ * @brief Revisa si el grafo esta vacio
+ * @return Un booleano
  */
 bool Graph::Empty()
 {
@@ -29,8 +28,8 @@ bool Graph::Empty()
 }
 
 /**
- * @brief Este metodo te devuelve la cantidad de Vertices que posee el grafo
- * @return An int que es el numero de vertices
+ * @brief Devuelve la cantidad de vertices del grafo
+ * @return Int con numeros de vertices
  */
 int Graph::Size()
 {
@@ -45,9 +44,9 @@ int Graph::Size()
     return cont;
 }
 /**
- * @brief Este metodo te recupera el nombre de un vertice
- * @param nombre A string que contiene el nombre de un vertice del grafo
- * @return A Null
+ * @brief Devuelve el nombre del vertice
+ * @param nombre devuelve el nombre del vertice
+ * @return Null
  */
 Vertice *Graph::GetVertice(string nombre)
 {
@@ -65,8 +64,8 @@ Vertice *Graph::GetVertice(string nombre)
 }
 
 /**
- * @brief ESte metodo se encarga de insertar los vertices en el grafo
- * @param nombre A string que corresponde al nombre del vertice
+ * @brief Inserta los vertices en el grafo
+ * @param nombre devuelve el nombre del vertice
  */
 void Graph::InsVertice(string nombre)
 {
@@ -92,10 +91,10 @@ void Graph::InsVertice(string nombre)
 }
 
 /**
- * @brief Este metodo se encarga de insertar las aristas entre los vertices
- * @param origen A Vertice una referencia al vertice del origen
- * @param destino A Vertice una referencia al vertice del destino
- * @param peso A int que corresponde al valor de la arista
+ * @brief Inserta las aristas en los vertices
+ * @param comienzo una referencia al vertice del comienzo
+ * @param final una referencia al vertice del final
+ * @param num que corresponde al valor de la arista
  */
 void Graph::InsArista(Vertice *comienzo, Vertice *final, int num)
 {
@@ -125,7 +124,7 @@ void Graph::InsArista(Vertice *comienzo, Vertice *final, int num)
 }
 
 /**
- * @brief Este metodo te imprime la lista de adyacencia correspodiente al grafo
+ * @brief Imprime la lista de adyacencia
  */
 string Graph::listAdyacente()
 {
@@ -153,7 +152,7 @@ string Graph::listAdyacente()
 }
 
 /**
- * @brief Este metodo se encarga de destruir el grafo
+ * @brief Destruye el grafo
  */
 void Graph::Deny()
 {
@@ -168,9 +167,9 @@ void Graph::Deny()
 }
 
 /**
- * @brief Este metodo se encarga de eliminar las aristas
- * @param origen Vertice que se corresponde al origen
- * @param destino Vertice que corresponde al destino
+ * @brief Elimina las aritstas
+ * @param comienzo una referencia al vertice del comienzo
+ * @param final una referencia al vertice del final
  */
 void Graph::EliminarArista(Vertice *comienzo, Vertice *final)
 {
@@ -209,8 +208,8 @@ void Graph::EliminarArista(Vertice *comienzo, Vertice *final)
 }
 
 /**
- * @brief ESte metodo se encarga de eliminar un vertice especificado
- * @param vert Un Vertice que corresponde al que se desea eliminar
+ * @brief Elimina un vertice
+ * @param vert2 Vertice que se elimina
  */
 void Graph::EliminarVertice(Vertice *vert2)
 {
@@ -251,8 +250,8 @@ void Graph::EliminarVertice(Vertice *vert2)
 }
 
 /**
- * @brief ESte metodo encuentra todos los vertices que tengan conexion entre si
- * @param origen Un Vertice que corresponde al vertice del que partes a invertigar
+ * @brief Encuentra las conexiones de los vertices
+ * @param comienzo desde donde comienza a recorrer los vertices
  */
 void Graph::ProfRecorrido(Vertice *comienzo)
 {
@@ -306,9 +305,9 @@ void Graph::ProfRecorrido(Vertice *comienzo)
 }
 
 /**
- * @brief Este metodo se encarga de Recorrer el grafo y de paso calcular la ruta que sera de menor costo de forma voraz
- * @param origen Un vertice que sera el punto de partida
- * @param destino Un vertice que corresponde al de llegada
+ * @brief Recorre el grafo y calcula la ruta más corta
+ * @param comienzo una referencia al vertice del comienzo
+ * @param final una referencia al vertice del final
  */
 void Graph::ProfPrimero(Vertice *comienzo, Vertice *final){
     Vertice *VerticeActual, *FinalActual;
@@ -388,9 +387,9 @@ bool Comparar(pair <Vertice*, int> x, pair<Vertice*, int> y)
 }
 
 /**
- * @brief Este metodo se encarga de recorrer el grafo y de paso calcular la ruta que sera de menor costo usando bactraking
- * @param origen Un vertice que sera el punto de partida
- * @param destino Un vertice que sera el punto de llegada
+ * @brief Recorre el grafo y calcula la ruta de menor costo
+ * @param comienzo una referencia al vertice del comienzo
+ * @param final una referencia al vertice del final
  */
 string Graph::PrimMejor(Vertice *comienzo, Vertice *final){
 

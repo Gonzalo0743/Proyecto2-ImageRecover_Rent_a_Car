@@ -5,7 +5,10 @@
 #include "QString"
 #include "QMessageBox"
 
-
+/**
+ * @brief Crea la ventana de Rent a car
+ * @param parent genera la ventana de rent a car
+ */
 RCWindow::RCWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::RCWindow)
@@ -13,6 +16,9 @@ RCWindow::RCWindow(QWidget *parent) :
     ui->setupUi(this);
 }
 
+/**
+ * @brief Borra la ventana de rent a car
+ */
 RCWindow::~RCWindow()
 {
     delete ui;
@@ -21,7 +27,9 @@ RCWindow::~RCWindow()
 Graph gr;
 int Vertices = 0;
 
-
+/**
+ * @brief Acciona el boton para definir las ciudades y su distancia
+ */
 void RCWindow::on_pushButton_ciudades_clicked()
 {
     QString ingreso_ciudades = ui->lineEdit_ciudades->text();
@@ -65,7 +73,9 @@ void RCWindow::on_pushButton_ciudades_clicked()
         }
 }
 
-
+/**
+ * @brief Acciona el boton para calcular la mejor ruta y el combustible necesario
+ */
 void RCWindow::on_pushButton_calcular_clicked()
 {
     QString ciudad_comienzo = ui->lineEdit_ciudad_comienzo->text();

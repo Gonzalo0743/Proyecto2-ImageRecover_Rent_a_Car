@@ -109,7 +109,7 @@ public:
 
         pushButton_calcular = new QPushButton(centralwidget);
         pushButton_calcular->setObjectName(QString::fromUtf8("pushButton_calcular"));
-        pushButton_calcular->setGeometry(QRect(590, 390, 80, 21));
+        pushButton_calcular->setGeometry(QRect(590, 400, 80, 21));
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(50, 140, 91, 16));

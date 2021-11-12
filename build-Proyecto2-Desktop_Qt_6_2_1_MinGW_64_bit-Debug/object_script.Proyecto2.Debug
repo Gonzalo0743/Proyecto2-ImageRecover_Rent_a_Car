@@ -1,0 +1,11 @@
+debug/genalgorithm.o
+debug/genome.o
+debug/graph.o
+debug/irwindow.o
+debug/main.o
+debug/mainwindow.o
+debug/rcwindow.o
+debug/qrc_Resources.o
+debug/moc_irwindow.o
+debug/moc_mainwindow.o
+debug/moc_rcwindow.o

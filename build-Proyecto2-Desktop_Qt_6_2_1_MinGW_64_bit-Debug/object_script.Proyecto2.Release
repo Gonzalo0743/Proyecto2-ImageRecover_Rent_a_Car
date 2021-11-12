@@ -1,0 +1,11 @@
+release/genalgorithm.o
+release/genome.o
+release/graph.o
+release/irwindow.o
+release/main.o
+release/mainwindow.o
+release/rcwindow.o
+release/qrc_Resources.o
+release/moc_irwindow.o
+release/moc_mainwindow.o
+release/moc_rcwindow.o
